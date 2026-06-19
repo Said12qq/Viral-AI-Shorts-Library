@@ -1,0 +1,6 @@
+{
+  "name": "Viral AI Shorts Library",
+  "description": "Premium AI video template library where creators discover, preview, and download viral short-form video templates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

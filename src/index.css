@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  h1, h2, h3, .font-display {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+  }
+}
+
+/* Custom design elements for Viral AI Shorts Library */
+.glass {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-premium {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 107, 44, 0.15);
+}
+
+.orange-glow {
+  background: radial-gradient(circle, rgba(255, 107, 44, 0.12) 0%, rgba(255, 107, 44, 0) 70%);
+}
+
+.purple-glow {
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, rgba(168, 85, 247, 0) 70%);
+}
+
+.neon-orange {
+  color: #FF6B2C;
+}
+
+.bg-neon-orange {
+  background-color: #FF6B2C;
+}
+
+.border-neon-orange {
+  border-color: #FF6B2C;
+}
+
+.text-shadow-neon {
+  text-shadow: 0 0 15px rgba(255, 107, 44, 0.4);
+}
+
+.text-shadow-purple {
+  text-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+/* Animate backgrounds or glow */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1) translate(0px, 0px);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1) translate(15px, -15px);
+    opacity: 1;
+  }
+}
+
+.animate-glow-slow {
+  animation: pulseGlow 12s infinite alternate ease-in-out;
+}
+
+/* Hide scrollbar for standard clean layout */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 107, 44, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 107, 44, 0.5);
+}
+
